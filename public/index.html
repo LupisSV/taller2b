@@ -7,16 +7,30 @@
 </head>
 <body>
   <h1>Actividad 10, 11 y 12 </h1>
-  <form action="index_submit" method="POST" accept-charset="utf-8">
-  		<select name="transporte">
-
-		<option>Coche</option>
-
-		<option>Avión</option>
-
-		<option>Tren</option>
-
-</select>
+  <form method="POST">
+    <div>
+      <p>Selecciona tu sexo: </p>
+      <input type="radio" id="Mujer" name="sexo" value="Mujer">
+      <label for="Mujer">Mujer</label><br>
+      <input type="radio" id="Hombre" name="sexo" value="Hombre">
+      <label for="Hombre">Hombre</label><br>
+    </div>
+    <div>
+      <p>¿Qué actividades haces? (Selecciona una)</p>
+    	<select name="actividades" id="actividades">
+      	<option>Lavar trastes</option>
+      	<option>Trapear</option>
+      	<option>Planchar</option>
+        <option>Hacer comida</option>
+        <option>Trabajar</option>
+        <option>Jugar soccer</option>
+        <option>Manejar</option>
+        <option>Hacer reparaciones en casa</option>
+      </select>
+    </div>    
+    <div>
+      <input type="submit">
+    </div>
   </form>
 </body>
 </html>
